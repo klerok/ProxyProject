@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  &-nav {
+    display: flex;
+    gap: 40px;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #4f5665;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+
+    &-def {
+        font-family: Rubik, sans-serif;
+        border: none;
+        background-color: white;
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+
+    &-red {
+        font-family: Rubik, sans-serif;
+        border-radius: 50px;
+        border: 1px solid #f53855;
+        background-color: white;
+        font-size: 16px;
+        font-weight: 500;
+        color: #f53855;
+        width: 150px;
+        height: 45px;
+    }
+  }
+}
