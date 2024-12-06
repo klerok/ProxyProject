@@ -45,26 +45,28 @@ body {
   font-family: Rubik, sans-serif;
 }
 
-.main {
-  margin: 0 150px;
+main {
+  margin-left: 150px;
 }
-.main .vpn {
+
+.vpn {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.main h1 {
+.vpn-info-title {
   font-size: 50px;
   line-height: 140%;
-  font-weight: 400;
-  color: #4f5665;
+  font-weight: 500;
+  color: #0b132a;
 }
-.main p {
+.vpn-info-subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
   color: #4f5665;
 }
-.main .start {
+.vpn-info .start {
   border: none;
   border-radius: 10px;
   width: 250px;
@@ -76,4 +78,192 @@ body {
   line-height: 156%;
   font-family: Rubik, sans-serif;
   box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
+  -webkit-box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
+  -moz-box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
+}
+.vpn img {
+  margin-right: 83px;
+}
+
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 103px;
+  justify-items: center;
+  margin-right: 150px;
+  border-radius: 10px;
+  height: 200px;
+  padding-top: 37px;
+  box-sizing: border-box;
+  box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.05), 0 25px 25px 0 rgba(0, 0, 0, 0.04), 0 56px 34px 0 rgba(0, 0, 0, 0.03), 0 100px 40px 0 rgba(0, 0, 0, 0.01), 0 157px 44px 0 rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.05), 0 25px 25px 0 rgba(0, 0, 0, 0.04), 0 56px 34px 0 rgba(0, 0, 0, 0.03), 0 100px 40px 0 rgba(0, 0, 0, 0.01), 0 157px 44px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.05), 0 25px 25px 0 rgba(0, 0, 0, 0.04), 0 56px 34px 0 rgba(0, 0, 0, 0.03), 0 100px 40px 0 rgba(0, 0, 0, 0.01), 0 157px 44px 0 rgba(0, 0, 0, 0);
+  font-family: Rubik, sans-serif;
+}
+.grid-info-stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36.5px;
+  height: 125px;
+  width: 365.5px;
+}
+.grid-info-stat-img {
+  width: 55px;
+}
+.grid-info-stat-p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #4f5665;
+}
+.grid-info .b-r {
+  border-right: 3px solid #eeeff2;
+}
+.grid-info .bold {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 120%;
+  color: #0b132a;
+}
+
+.features {
+  display: flex;
+  gap: 170px;
+  margin-top: 96px;
+}
+.features-info-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 143%;
+  color: #0b132a;
+}
+.features-info-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #4f5665;
+}
+.features-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.features-info ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: #4f5665;
+}
+.features-info ul li::before {
+  content: url(assets/Group\ 1120.svg);
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+  margin-right: 150px;
+}
+.plan-title {
+  margin-top: 211px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 143%;
+  color: #0b132a;
+  text-align: center;
+}
+.plan-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #4f5665;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.plan .grid-plan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.plan .grid-plan .b-red {
+  border: 2px solid #f53838;
+}
+.plan .grid-plan-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 330px;
+  height: 760px;
+  background-color: #fff;
+}
+.plan .grid-plan-price .btn-inactive {
+  border: 2px solid #f53838;
+  border-radius: 50px;
+  width: 177px;
+  height: 45px;
+  background-color: #fff;
+  color: #f53838;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Rubik, sans-serif;
+}
+.plan .grid-plan-price .btn-active {
+  border: 2px solid #f53838;
+  border-radius: 50px;
+  width: 177px;
+  height: 45px;
+  background-color: #f53838;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Rubik, sans-serif;
+}
+.plan .grid-plan-price .bold-price {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: #0b132a;
+  margin-bottom: 20px;
+}
+.plan .grid-plan-price .price {
+  font-weight: 400;
+  color: #4f5665;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.plan .grid-plan-price .free-plan {
+  width: 144px;
+  margin-top: 80px;
+}
+.plan .grid-plan-price .plan-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: #0b132a;
+}
+.plan .grid-plan-price ul {
+  list-style-type: none;
+  padding: 0;
+}
+.plan .grid-plan-price li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: #4f5665;
+}
+.plan .grid-plan-price li::before {
+  content: url(assets/Group\ 1223.svg);
+  vertical-align: top;
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
