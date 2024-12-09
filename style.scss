@@ -10,19 +10,12 @@ body {
   font-family: Rubik, sans-serif;
 }
 
-@mixin p($fw, $fs, $lh, $fc) {
+@mixin text($fw, $fs, $lh, $fc) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
   color: $fc;
   
-}
-
-@mixin h1($fw, $fs, $lh, $fc) {
-  font-weight: $fw;
-  font-size: $fs;
-  line-height: $lh;
-  color: $fc;
 }
 
 @mixin box-shadow-red {
@@ -51,7 +44,7 @@ body {
   &-nav {
     display: flex;
     gap: 40px;
-    @include p(400, 16px, 0, none);
+    @include text(400, 16px, 0, none);
     align-items: center;
 
     a {
@@ -68,19 +61,26 @@ body {
     &-def {
       border: none;
       background-color: white;
-      @include p(500, 16px, 0, #0b132a);
+      @include text(500, 16px, 0, #0b132a);
       @include font;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     &-red {
       border-radius: 50px;
       border: 1px solid #f53855;
       background-color: white;
-      
       width: 150px;
       height: 45px;
       @include font;
-      @include p(500, 16px, 0, #f53855)
+      @include text(500, 16px, 0, #f53855);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -98,11 +98,11 @@ main {
 
   &-info {
     &-title {
-      @include h1(500, 50px, 140%, #0b132a)
+      @include text(500, 50px, 140%, #0b132a);
     }
 
     &-subtitle {
-      @include p(400, 16px, 187%, #4f5665)
+      @include text(400, 16px, 187%, #4f5665);
     }
 
     .start {
@@ -113,7 +113,7 @@ main {
       background-color: #f53838;
       @include font;
       @include box-shadow-red;
-      @include p(700, 16px, 156%, #fff)
+      @include text(700, 16px, 156%, #fff);
     }
   }
 }
@@ -143,7 +143,7 @@ main {
     }
 
     &-p {
-      @include p(400, 20px, 150%, #4f5665)
+      @include text(400, 20px, 150%, #4f5665);
     }
   }
 
@@ -152,7 +152,7 @@ main {
   }
 
   .bold {
-    @include p(700, 25px, 120%, #0b132a)
+    @include text(700, 25px, 120%, #0b132a);
   }
 }
 
@@ -163,11 +163,11 @@ main {
 
   &-info {
     &-title {
-      @include h1(500, 35px, 143%, #0b132a)
+      @include text(500, 35px, 143%, #0b132a);
     }
 
     &-subtitle {
-      @include p(400, 16px, 187%, #4f5665)
+      @include text(400, 16px, 187%, #4f5665);
     }
 
     ul {
@@ -175,7 +175,7 @@ main {
       padding: 0;
 
       li {
-        @include p(400, 14px, 214%, #4f5665);
+        @include text(400, 14px, 214%, #4f5665);
 
         &::before {
           content: url(assets/Group\ 1120.svg);
@@ -194,14 +194,14 @@ main {
   background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
 
   &-title {
-    margin-top: 211px;
+    padding-top: 80px;
     margin-bottom: 20px;
-    @include h1(500, 35px, 143%, #0b132a);
+    @include text(500, 35px, 143%, #0b132a);
     text-align: center;
   }
 
   &-subtitle {
-    @include p(400, 16px, 187%, #4f5665);
+    @include text(400, 16px, 187%, #4f5665);
     text-align: center;
     margin-bottom: 60px;
   }
@@ -229,7 +229,7 @@ main {
         width: 177px;
         height: 45px;
         background-color: #fff;
-        @include p(700, 16px, 0, #f53838);
+        @include text(700, 16px, 0, #f53838);
         @include font;
         margin-bottom: 50px;
       }
@@ -240,20 +240,20 @@ main {
         width: 177px;
         height: 45px;
         background-color: #f53838;
-        @include p(700, 16px, 0, #fff);
+        @include text(700, 16px, 0, #fff);
         @include font;
         margin-bottom: 50px;
         @include box-shadow-red;
       }
 
       .bold-price {
-        @include p(500, 25px, 120%, #0b132a);
+        @include text(500, 25px, 120%, #0b132a);
         text-align: center;
         margin-bottom: 20px;
       }
 
       .price {
-        @include p(400, 25px, 0, #4f5665);
+        @include text(400, 25px, 0, #4f5665);
         text-align: center;
         margin-bottom: 20px;
       }
@@ -264,12 +264,9 @@ main {
       }
 
       .plan-name {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 167%;
-        text-align: center;
-        color: #0b132a;
         margin: 30px 0;
+        @include text(500, 18px, 167%, #0b132a);
+        
       }
 
       ul {
@@ -278,10 +275,7 @@ main {
       }
 
       li {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 214%;
-        color: #4f5665;
+        @include text(400, 14px, 214%, #4f5665);
 
         &::before {
           content: url(assets/Group\ 1223.svg);
@@ -293,23 +287,29 @@ main {
   }
 }
 
+.mt-130{
+  margin-top: 130px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
 .map {
   margin-top: 150px;
 
   &-title {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 143%;
-    text-align: center;
-    color: #0b132a;
+    @include text(500, 35px, 143%, #0b132a);
+    text-align: center;    
   }
 
   &-subtitle {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 187%;
+    @include text(400, 16px, 187%, #4f5665);
     text-align: center;
-    color: #4f5665;
 
     &-bold {
       font-weight: 500;
@@ -330,20 +330,15 @@ main {
   align-items: center;
 
   &-title {
+    @include text(500, 35px, 143%, #0b132a);
     margin-top: 50px;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 143%;
     text-align: center;
-    color: #0b132a;
   }
 
   &-subtitle {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 187%;
+    @include text(400, 16px, 187%, #4f5665);
     text-align: center;
-    color: #4f5665;
+    margin-bottom: 60px;
   }
 
   &-section {
@@ -351,14 +346,11 @@ main {
     flex-direction: column;
     border: 2px solid #ddd;
     border-radius: 10px;
-    width: 340px;
+    width: calc((100% - 100px) / 3);
     padding: 30px;
 
     &-rate {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 187%;
-      color: #0b132a;
+      @include text(400, 16px, 187%, #0b132a);
     }
 
     &-character {
@@ -378,19 +370,13 @@ main {
     }
 
     .name {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 167%;
+      @include text(500, 18px, 167%, #0b132a);
       text-align: center;
-      color: #0b132a;
     }
 
     .location {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 214%;
+      @include text(400, 14px, 214%, #4f5665);
       text-align: center;
-      color: #4f5665;
     }
   }
 }
@@ -409,30 +395,22 @@ main {
   height: 563px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   gap: 25px;
   margin-top: 302px;
 
   &-info {
+    margin-top: 180px;
+
     &-title {
-      font-size: 16px;
-      line-height: 187%;
-      color: #4f5665;
-      font-weight: 400;
+      @include text(400, 16px, 187%, #4f5665);
     }
 
     .bold {
-      font-size: 16px;
-      line-height: 187%;
-      color: #4f5665;
-      font-weight: 500;
+      @include text(500, 16px, 187%, #4f5665);
     }
 
     &-year {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 187%;
-      color: #afb5c0;
+      @include text(400, 16px, 187%, #afb5c0);
     }
   }
 
@@ -454,20 +432,15 @@ main {
   &-nav {
     display: flex;
     gap: 125px;
+    margin-top: 180px;
 
     &-product {
       display: flex;
       flex-direction: column;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 187%;
-      color: #4f5665;
+      @include text(400, 16px, 187%, #4f5665);
 
       &-bold {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 167%;
-        color: #0b132a;
+        @include text(500, 18px, 167%, #0b132a);
       }
 
       p {
@@ -486,20 +459,28 @@ main {
   @include box-shadow-gray;
   height: 233px;
   position: absolute;
-  bottom: -3510px;
-  width: 1140px;
-  margin: 0 150px;
+  bottom: -4050px;
+  width: 1180px;
+  margin: 0 130px;
+
+  &-info {
+    &-title {
+      @include text(500, 35px, 129%, #0b132a)
+    }
+
+    &-subtitle {
+      @include text(400, 16px, 187%, #4f5665)
+    }
+  }
 
   &-btn {
     @include font;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 156%;
-    color: #fff;
+    @include text(700, 16px, 156%, #fff);
     border-radius: 10px;
     background-color: #f53838;
     border: none;
     width: 250px;
     height: 60px;
+    @include box-shadow-red;
   }
 }

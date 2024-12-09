@@ -37,6 +37,9 @@ body {
   color: #0b132a;
   font-family: Rubik, sans-serif;
 }
+.header-btn-def:hover {
+  cursor: pointer;
+}
 .header-btn-red {
   border-radius: 50px;
   border: 1px solid #f53855;
@@ -48,6 +51,9 @@ body {
   font-size: 16px;
   line-height: 0;
   color: #f53855;
+}
+.header-btn-red:hover {
+  cursor: pointer;
 }
 
 main {
@@ -170,7 +176,7 @@ main {
   background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
 }
 .plan-title {
-  margin-top: 211px;
+  padding-top: 80px;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 35px;
@@ -252,12 +258,11 @@ main {
   margin-top: 80px;
 }
 .plan .grid-plan-price .plan-name {
+  margin: 30px 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 167%;
-  text-align: center;
   color: #0b132a;
-  margin: 30px 0;
 }
 .plan .grid-plan-price ul {
   list-style-type: none;
@@ -275,6 +280,18 @@ main {
   margin-right: 20px;
 }
 
+.mt-130 {
+  margin-top: 130px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
 .map {
   margin-top: 150px;
 }
@@ -282,15 +299,15 @@ main {
   font-weight: 500;
   font-size: 35px;
   line-height: 143%;
-  text-align: center;
   color: #0b132a;
+  text-align: center;
 }
 .map-subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
-  text-align: center;
   color: #4f5665;
+  text-align: center;
 }
 .map-subtitle-bold {
   font-weight: 500;
@@ -308,26 +325,27 @@ main {
   align-items: center;
 }
 .feedback-title {
-  margin-top: 50px;
   font-weight: 500;
   font-size: 35px;
   line-height: 143%;
-  text-align: center;
   color: #0b132a;
+  margin-top: 50px;
+  text-align: center;
 }
 .feedback-subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
-  text-align: center;
   color: #4f5665;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .feedback-section {
   display: flex;
   flex-direction: column;
   border: 2px solid #ddd;
   border-radius: 10px;
-  width: 340px;
+  width: calc((100% - 100px) / 3);
   padding: 30px;
 }
 .feedback-section-rate {
@@ -353,15 +371,15 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 167%;
-  text-align: center;
   color: #0b132a;
+  text-align: center;
 }
 .feedback-section .location {
   font-weight: 400;
   font-size: 14px;
   line-height: 214%;
-  text-align: center;
   color: #4f5665;
+  text-align: center;
 }
 
 .users-feedback {
@@ -377,21 +395,23 @@ main {
   height: 563px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   gap: 25px;
   margin-top: 302px;
 }
+.footer-info {
+  margin-top: 180px;
+}
 .footer-info-title {
+  font-weight: 400;
   font-size: 16px;
   line-height: 187%;
   color: #4f5665;
-  font-weight: 400;
 }
 .footer-info .bold {
+  font-weight: 500;
   font-size: 16px;
   line-height: 187%;
   color: #4f5665;
-  font-weight: 500;
 }
 .footer-info-year {
   font-weight: 400;
@@ -415,6 +435,7 @@ main {
 .footer-nav {
   display: flex;
   gap: 125px;
+  margin-top: 180px;
 }
 .footer-nav-product {
   display: flex;
@@ -445,9 +466,21 @@ main {
   -moz-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.05), 0 25px 25px 0 rgba(0, 0, 0, 0.04), 0 56px 34px 0 rgba(0, 0, 0, 0.03), 0 100px 40px 0 rgba(0, 0, 0, 0.01), 0 157px 44px 0 rgba(0, 0, 0, 0);
   height: 233px;
   position: absolute;
-  bottom: -3510px;
-  width: 1140px;
-  margin: 0 150px;
+  bottom: -4050px;
+  width: 1180px;
+  margin: 0 130px;
+}
+.subscribe-info-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 129%;
+  color: #0b132a;
+}
+.subscribe-info-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #4f5665;
 }
 .subscribe-btn {
   font-family: Rubik, sans-serif;
@@ -460,4 +493,7 @@ main {
   border: none;
   width: 250px;
   height: 60px;
+  box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
+  -webkit-box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
+  -moz-box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
 }/*# sourceMappingURL=style.css.map */
