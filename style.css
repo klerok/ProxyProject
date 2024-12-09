@@ -15,6 +15,8 @@ body {
   gap: 40px;
   font-weight: 400;
   font-size: 16px;
+  line-height: 0;
+  color: none;
   align-items: center;
 }
 .header-nav a {
@@ -29,20 +31,23 @@ body {
 .header-btn-def {
   border: none;
   background-color: white;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 0;
+  color: #0b132a;
   font-family: Rubik, sans-serif;
 }
 .header-btn-red {
   border-radius: 50px;
   border: 1px solid #f53855;
   background-color: white;
-  font-size: 16px;
-  font-weight: 500;
-  color: #f53855;
   width: 150px;
   height: 45px;
   font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0;
+  color: #f53855;
 }
 
 main {
@@ -57,9 +62,9 @@ main {
   align-items: center;
 }
 .vpn-info-title {
+  font-weight: 500;
   font-size: 50px;
   line-height: 140%;
-  font-weight: 500;
   color: #0b132a;
 }
 .vpn-info-subtitle {
@@ -74,14 +79,14 @@ main {
   width: 250px;
   height: 60px;
   background-color: #f53838;
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 156%;
   font-family: Rubik, sans-serif;
   box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
   -webkit-box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
   -moz-box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 156%;
+  color: #fff;
 }
 
 .grid-info {
@@ -161,7 +166,6 @@ main {
 .plan {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
 }
@@ -193,11 +197,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   border: 2px solid #ddd;
   border-radius: 10px;
   width: 330px;
-  height: 760px;
   background-color: #fff;
 }
 .plan .grid-plan-price .btn-inactive {
@@ -206,9 +208,10 @@ main {
   width: 177px;
   height: 45px;
   background-color: #fff;
-  color: #f53838;
   font-weight: 700;
   font-size: 16px;
+  line-height: 0;
+  color: #f53838;
   font-family: Rubik, sans-serif;
   margin-bottom: 50px;
 }
@@ -218,9 +221,10 @@ main {
   width: 177px;
   height: 45px;
   background-color: #f53838;
-  color: #fff;
   font-weight: 700;
   font-size: 16px;
+  line-height: 0;
+  color: #fff;
   font-family: Rubik, sans-serif;
   margin-bottom: 50px;
   box-shadow: 0px 32px 54px 4px rgba(245, 56, 56, 0.35);
@@ -231,14 +235,15 @@ main {
   font-weight: 500;
   font-size: 25px;
   line-height: 120%;
-  text-align: center;
   color: #0b132a;
+  text-align: center;
   margin-bottom: 20px;
 }
 .plan .grid-plan-price .price {
   font-weight: 400;
-  color: #4f5665;
   font-size: 25px;
+  line-height: 0;
+  color: #4f5665;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -252,6 +257,7 @@ main {
   line-height: 167%;
   text-align: center;
   color: #0b132a;
+  margin: 30px 0;
 }
 .plan .grid-plan-price ul {
   list-style-type: none;
